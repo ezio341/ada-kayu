@@ -1,0 +1,24 @@
+.title {
+  font-size: 48px;
+  font-weight: 700;
+
+  @include mantine.smaller-than(mantine.$mantine-breakpoint-md) {
+    font-size: 32px;
+  }
+}
+
+.description {
+  font-size: 24px;
+
+  @include mantine.smaller-than(mantine.$mantine-breakpoint-md) {
+    font-size: 18px;
+  }
+}
+
+.bg {
+  background-size: contain;
+
+  @include mantine.smaller-than(mantine.$mantine-breakpoint-md) {
+    background-size: cover;
+  }
+}

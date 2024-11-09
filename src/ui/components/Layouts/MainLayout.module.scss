@@ -1,0 +1,50 @@
+.menu {
+  transition: background-color 0.3s ease;
+  padding: 32px 32px;
+
+  &:hover {
+    color: var(--mantine-color-gray-9);
+  }
+  padding: 24px 32px;
+
+  @include mantine.smaller-than(mantine.$mantine-breakpoint-lg) {
+    padding: 16px 16px;
+  }
+
+  &Active {
+    font-weight: bold;
+    padding: 24px 32px;
+    background-color: var(--mantine-color-gray-1);
+  
+    @include mantine.smaller-than(mantine.$mantine-breakpoint-lg) {
+      padding: 16px 16px;
+    }
+  }
+}
+
+.menuNavbar {
+  &:hover {
+    background-color: var(--mantine-color-gray-1);
+    color: var(--mantine-color-gray-9);
+  }
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.footerTitle {
+  font-weight: bolder;
+  font-size: 36px;
+  @include mantine.smaller-than(mantine.$mantine-breakpoint-lg) {
+    font-size: 24px;
+  }
+}
+
+.contentContainer {
+  padding: 32px 32px;
+  @include mantine.smaller-than(mantine.$mantine-breakpoint-sm) {
+    padding: 0 0;
+  }
+}
