@@ -32,10 +32,7 @@ const pointDescriptionData = [
 export function HowItsMade() {
   const [activePoint, setActivePoint] = useState(1);
 
-  const [debouncedActivePoint, setDebouncedActivePoint] = useDebouncedValue(
-    activePoint,
-    300
-  );
+  const [debouncedActivePoint] = useDebouncedValue(activePoint, 300);
 
   return (
     <Grid gutter={64}>
